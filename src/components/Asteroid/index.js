@@ -93,7 +93,7 @@ const Asteroid = () => {
             </div>
 
             <div className="text-center mt-4 text-sm text-blue-700 underline">
-              <a href={asteroid.nasa_jpl_url} target="_blank">View in Nasa Website</a>
+              <a href={asteroid.nasa_jpl_url} target="_blank" rel="noreferrer">View in Nasa Website</a>
             </div>
           </div>
         ): null}

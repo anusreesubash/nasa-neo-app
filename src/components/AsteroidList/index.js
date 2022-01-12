@@ -35,7 +35,7 @@ const AsteroidList = ({asteroids}) => {
                 <tbody>
                   {asteroids && asteroids.length ? asteroids.map((asteroid, i) => {
                     return (
-                      <tr className={`${i%2 ? 'bg-gray-100' : ''} border-b`} onClick={() => viewAsteroid(asteroid.id)}>
+                      <tr key={i} className={`${i%2 ? 'bg-gray-100' : ''} border-b`} onClick={() => viewAsteroid(asteroid.id)}>
                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                           {i + 1}
                         </td>
